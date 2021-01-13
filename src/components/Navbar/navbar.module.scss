@@ -1,0 +1,65 @@
+.titleContainer {
+    height: 80px;
+    text-align: center;
+    justify-items: center;
+}
+
+.title {
+    color: #fff;
+    margin: 0;
+    // position: fixed;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container {
+    width: 30vw;
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+    overflow: hidden;
+    // overflow-y: scroll;
+    // overflow-y: hidden;
+}
+
+.animationContainer {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.animationContainer::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  .animationContainer::-webkit-scrollbar-track {
+    background: rgb(32, 32, 32);        /* color of the tracking area */
+  }
+  
+  .animationContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 50, 50);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(50, 50, 50);  /* creates padding around scroll thumb */
+  }
+
+.animation {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgb(15, 3, 3);
+    box-sizing: border-box;
+    padding: 10px;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background-color:rgb(36, 36, 36);
+    }
+}
+
+.animationTitle {
+    color: #fff;
+    margin: 0;
+}
+
+.selected {
+    background-color: #fff;
+}
